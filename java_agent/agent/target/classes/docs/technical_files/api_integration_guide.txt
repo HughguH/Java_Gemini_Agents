@@ -1,0 +1,31 @@
+# API Integration Guide
+
+## Setting Up Webhooks
+Webhooks allow real-time notifications about events in your account.
+
+Supported events:
+- user.created
+- subscription.updated
+- payment.succeeded
+- payment.failed
+- invoice.paid
+
+Requirements:
+- Your endpoint must be publicly accessible via HTTPS.
+- Respond with HTTP 200 within 5 seconds.
+- Verify signatures using the secret key found in Dashboard > Webhooks.
+
+Example verification header:
+Authorization: Bearer whsec_your_webhook_secret
+
+## Authentication
+All API requests must include an API key:
+Header: Authorization: Bearer sk_live_your_api_key
+
+API keys can be created and revoked in Dashboard > Developers > API Keys.
+Never expose secret keys in client-side code.
+
+## Rate Limits
+- 1000 requests per hour per API key.
+- On exceeding the limit, API returns 429 Too Many Requests.
+- Respect the Retry-After header for automatic recovery.

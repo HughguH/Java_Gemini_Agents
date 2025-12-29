@@ -1,0 +1,29 @@
+# Database Connection Troubleshooting
+
+## Connection Timeout
+Error message usually contains "Connection timed out" or "Failed to connect within timeout".
+
+Solutions:
+- Increase connection timeout in your connection string:
+  jdbc:mysql://host:3306/dbname?connectTimeout=30000&socketTimeout=30000
+- Check if the database host is reachable (ping / telnet port 3306).
+- Verify firewall rules allow outbound traffic on the database port.
+
+## SSL/TLS Errors
+Common errors: "SSL connection error", "Unable to establish SSL connection".
+
+Quick fix for development only:
+Add to connection URL:
+?useSSL=true&trustServerCertificate=true
+
+For production:
+- Import the database server's certificate into your Java truststore.
+- Or use ?verifyServerCertificate=true with proper CA.
+
+## Too Many Connections
+Error: "Too many connections"
+
+Causes and fixes:
+- Close connections properly in your code (use try-with-resources).
+- Configure connection pooling (HikariCP recommended) with reasonable max pool size.
+- Contact support to increase the global connection limit if needed.

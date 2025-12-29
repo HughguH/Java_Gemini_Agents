@@ -1,0 +1,39 @@
+Billing Policy and Refunds
+
+## Available Subscription Plans
+
+- Free: $0/month
+- Up to 100 API requests per month
+- Basic Features
+- Community Support
+
+- Starter: $29/month (or $290/year – 2 months free)
+- Up to 10,000 API requests per month
+- Priority Email Support
+
+- Professional: $99/month (or $990/year – 2 months free)
+- Unlimited API requests
+- Dedicated Webhook Support
+- 99.9% SLA
+
+- Enterprise: Individual Pricing
+- Custom Limits and Features
+
+## Plan Change (Upgrade/Downgrade)
+- Upgrade: Immediate, prorated price difference
+- Downgrade: Effective from the start of the next billing cycle.
+
+Refund Policy
+- Full refund within 14 days of the first payment for any paid plan (no questions asked).
+- After 14 days: no refunds for the current billing cycle.
+- Exception: If the service was unavailable for more than 24 consecutive hours (confirmed by monitoring), a prorated refund will be issued for the duration of the unavailability.
+- Refunds are processed within 5-10 business days to the original payment method.
+- Annual plans: prorated refund for unused months (minus any annual discount).
+
+- Cancelling Your Subscription
+- Cancel at any time in Dashboard > Billing.
+- Access to paid features until the end of the paid period.
+- No partial refunds for cancellations outside the 14-day period.
+
+- Taxes
+- Prices exclude VAT/local taxes – these are added at checkout according to the customer's country.

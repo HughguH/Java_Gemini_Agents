@@ -1,0 +1,4 @@
+Decide whether the question falls into the "Billing" or "Technical" category.
+Answer with the word "Billing" or "Technical" as the first word. 
+Then add # symbol, an then put keywords from user question separated inly by # symbol. 
+If the question does not fall into either of these categories, send only the number 9001.

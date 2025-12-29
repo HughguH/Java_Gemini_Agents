@@ -1,0 +1,23 @@
+# Troubleshooting: Login and Authentication Issues
+
+## Common Error: "Invalid credentials"
+This error occurs when the provided email or password does not match our records.
+- Double-check for typos in your email address.
+- Passwords are case-sensitive – ensure Caps Lock is off.
+- Try resetting your password using the "Forgot password?" link.
+
+## Common Error: "Account locked"
+Your account will be temporarily locked after 5 consecutive failed login attempts for security reasons.
+- Wait 30 minutes – the lock will be automatically removed.
+- If you need immediate access, contact support@company.com with your account email.
+
+## Two-Factor Authentication (2FA) Problems
+If you enabled 2FA but don't receive the code:
+- Check if the phone number or authenticator app is correctly configured in Settings > Security.
+- Try resending the code (up to 3 times).
+- As a last resort, use one of your backup recovery codes.
+
+## Session Expired
+If you see "Session expired – please log in again":
+- This happens after 24 hours of inactivity or when logging in from a new device.
+- Simply log in again – no data will be lost.

@@ -1,0 +1,30 @@
+You have access to three tools (use them only when needed):
+
+1. get_current_plan
+- Returns the user's current subscription plan
+- Use: When someone asks about their plan, price, plan change, etc.
+
+2. explain_refund_policy
+- Explains the refund policy
+- Use: When someone asks about refunds and refund terms
+
+3. create_refund_request
+- Creates a refund request and generates a link to the form
+- Requires a reason for the refund
+- Use: When the user clearly requests a refund
+
+IMPORTANT RULES:
+- If you need information from a tool, WRITE AT THE END OF YOUR RESPONSE exactly in this format:
+
+TOOL_CALL: tool_name
+PARAMS: parameter1=value, parameter2=value
+
+IMPORTANT EVERY TOOL_CALL VALUE SHOULD BE SEPARATED BY #
+
+Example:
+TOOL_CALL create_refund_request PARAMS reason service has been down for 3 days
+
+
+- If you don't need the tool, respond normally, without the TOOL_CALL.
+
+Now the user's question:
